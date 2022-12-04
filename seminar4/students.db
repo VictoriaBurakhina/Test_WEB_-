@@ -1,0 +1,15 @@
+
+CREATE TABLE students (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age INTEGER,
+  address TEXT NOT NULL
+);
+
+INSERT INTO students VALUES (1, "Clark", 25,"Moscow, Varshavskaya,25");
+INSERT INTO students VALUES (2, "Dave", 37,"Moscow, Ryabinovaya,43");
+INSERT INTO students VALUES (3, "Ava", 48, "Podolsk, Kirova,5");
+INSERT INTO students VALUES (4, "Peter", 23,"Moscow, Varshavskaya,2");
+INSERT INTO students VALUES (5, "Anna", 35,"Moscow, Ryabinovaya,34");
+INSERT INTO students VALUES (6, "Kate", 50, "Podolsk, Kirova,8");
+SELECT * FROM students WHERE age > 26;
